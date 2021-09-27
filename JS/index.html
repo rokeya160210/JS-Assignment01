@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Bootstrap icon -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        
+        
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <title>Conversion</title>
+
+        <script src="js.js"></script> 
+        
+        <!-- <script> function ConvertfToc(){
+            var  F = document.getElementById("Farenheit").value;
+            var res = document.getElementById("result2").innerHTML = "Result = " + parseFloat(5/9) * (F-32);
+        }</script> -->
+    </head>
+<body>
+    <div class="container ">
+        <div class="row ">
+            <div class="col d-flex justify-content-center">
+                <button type="button"onclick= ConvertfToc(44.22,36.44,47.56,39.22,49.78,44.78,49.22,12)>FarenheitToCelcius</button>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <button type="button" onclick="covertCtoF(22,8,28,13,32,23,31,12)" >CelciusToFarenheit</button>
+            </div>
+
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-4 p-5 d-flex justify-content-center">
+            <div id = "div1" class="col border border-dark bg-light p-4" onclick="displayDate()">
+                <i class="bi bi-cloud-haze"></i><br>
+                <p>December to February</p>
+                <p id = "H1"> High 44.22'f </p>
+                
+                <p id = "L1"> Low 36.44'f </p>
+
+            </div>
+            <div id = "div2" class="col bg-secondary p-4 " onclick="displayDate2()">
+                <i class="bi bi-snow2"></i>
+                <p>March To May</p>
+                <p id = "H2"> High 47.56'f </p>
+                
+                <p id = "L2"> Low 39.22'f </p>
+
+            </div>
+            <div id = "div3" class="col bg-light border border-dark p-4" onclick="displayDate3()">
+                <i class="bi bi-brightness-high-fill"></i><br>
+                <p>June To August</p>
+                <p id = "H3"> High 49.78'f </p>
+                
+                <p id = "L3"> Low 44.78'f </p>
+            </div>
+            <div id = "div4" class="col bg-secondary p-4"onclick="displayDate4()">
+                <i class="bi bi-cloud-drizzle-fill"></i><br>
+                <p>September To November</p>
+                <p id = "H4"> High 49.22'f </p>
+                
+                <p id = "L4"> Low 38.67'f </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col d-flex justify-content-center">
+            <p id = "demo" class="border border-dark">Click any Box to see date...</p>
+        </div>
+    </div>
+        
+
+</body>
+</html>
